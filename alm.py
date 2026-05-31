@@ -96,9 +96,9 @@ div[data-testid="stMetric"] {
 
 /* Metric labels */
 div[data-testid="stMetricLabel"] p {
-    color: #C9D1D9 !important;
+    color: #E6EDF3 !important;
     font-size: 0.9rem !important;
-    font-weight: 500 !important;
+    font-weight: 600 !important;
 }
 
 /* Metric values */
