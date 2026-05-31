@@ -54,7 +54,7 @@ C_TEAL   = "#26C6DA"
 C_BG     = "#0D1117"   # page background
 C_PANEL  = "#1C2128"   # chart panel
 C_GRID   = "#334155"
-C_AXIS   = "#B1BAC4"
+C_AXIS   = "#E6EDF3"
 C_TEXT   = "#E6EDF3"
 
 ASSET_COLORS = [C_GREEN, C_BLUE, C_PURPLE, C_ORANGE, C_TEAL, "#FFFFFF"]
@@ -63,27 +63,13 @@ ASSET_COLORS = [C_GREEN, C_BLUE, C_PURPLE, C_ORANGE, C_TEAL, "#FFFFFF"]
 st.markdown("""
 <style>
 
-/* Main container */
-.block-container {
-    padding-top: 2.2rem;
-    padding-bottom: 2rem;
-}
-
 /* Sidebar */
 section[data-testid="stSidebar"] {
     background: #0B0F14;
 }
 
-/* Sidebar text */
 section[data-testid="stSidebar"] * {
     color: #E6EDF3 !important;
-}
-
-/* Radio button labels */
-div[role="radiogroup"] label {
-    color: #E6EDF3 !important;
-    font-size: 1rem !important;
-    font-weight: 500 !important;
 }
 
 /* Metric cards */
@@ -94,14 +80,14 @@ div[data-testid="stMetric"] {
     padding: 14px 16px;
 }
 
-/* Metric labels */
+/* Metric label text */
 div[data-testid="stMetricLabel"] p {
     color: #E6EDF3 !important;
     font-size: 0.9rem !important;
     font-weight: 600 !important;
 }
 
-/* Metric values */
+/* Metric value text */
 div[data-testid="stMetricValue"] {
     color: #FFFFFF !important;
     font-size: 2rem !important;
@@ -113,10 +99,28 @@ div[data-testid="stMetricDelta"] {
     color: #58A6FF !important;
 }
 
-/* Headers */
+/* Main page headings */
 h1, h2, h3 {
     color: #0D1117 !important;
     letter-spacing: 0.2px;
+}
+
+/* Info / warning / success speech bubbles */
+div[data-testid="stAlert"] p,
+div[data-testid="stAlert"] div,
+div[data-testid="stAlert"] span {
+    color: #0D1117 !important;
+    font-weight: 500 !important;
+}
+
+/* Plotly legend and axis text */
+.legendtext,
+.xtick text,
+.ytick text,
+.xtitle,
+.ytitle,
+.gtitle {
+    fill: #E6EDF3 !important;
 }
 
 </style>
@@ -130,7 +134,7 @@ def style_fig(fig, height=420, title=None, legend_bottom=True):
         paper_bgcolor=C_BG,
         plot_bgcolor=C_PANEL,
         font=dict(color=C_TEXT, family="monospace", size=12),
-        title=dict(text=title, font=dict(color="#E6EDF3", size=15)) if title else None,
+        title=dict(text=title, font=dict(color="#FFFFFF", size=15)) if title else None,
         height=height,
         margin=dict(l=60, r=30, t=60 if title else 30, b=60),
         hoverlabel=dict(bgcolor=C_PANEL, font_size=12, font_family="monospace"),
@@ -140,7 +144,8 @@ def style_fig(fig, height=420, title=None, legend_bottom=True):
     if legend_bottom:
         fig.update_layout(
             legend=dict(orientation="h", yanchor="bottom", y=1.02,
-                        xanchor="left", x=0, bgcolor="rgba(0,0,0,0)")
+                        xanchor="left", x=0, bgcolor="rgba(0,0,0,0)"
+                        font=dict(color="#E6EDF3", size=12))
         )
     return fig
 
