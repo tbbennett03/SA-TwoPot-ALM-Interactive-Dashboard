@@ -55,7 +55,7 @@ C_BG     = "#0D1117"   # page background
 C_PANEL  = "#161B22"   # chart panel
 C_GRID   = "#21262D"
 C_AXIS   = "#8B949E"
-C_TEXT   = "#C9D1D9"
+C_TEXT   = "#F8FAFC"
 
 ASSET_COLORS = [C_GREEN, C_BLUE, C_PURPLE, C_ORANGE, C_TEAL, "#FFFFFF"]
 
