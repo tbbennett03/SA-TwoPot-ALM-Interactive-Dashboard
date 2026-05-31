@@ -126,6 +126,28 @@ div[data-testid="stAlert"] span {
 </style>
 """, unsafe_allow_html=True)
 
+st.markdown("""
+<style>
+
+/* Force Streamlit metric label/title text to be lighter */
+div[data-testid="stMetricLabel"],
+div[data-testid="stMetricLabel"] *,
+div[data-testid="stMetric"] label,
+div[data-testid="stMetric"] label *,
+div[data-testid="stMetric"] [data-testid="stMarkdownContainer"] p {
+    color: #E6EDF3 !important;
+    opacity: 1 !important;
+    font-weight: 600 !important;
+}
+
+/* Prevent faded/truncated metric label text */
+div[data-testid="stMetricLabel"] {
+    opacity: 1 !important;
+}
+
+</style>
+""", unsafe_allow_html=True)
+
 
 def style_fig(fig, height=420, title=None, legend_bottom=True):
     """Apply the consistent dark theme to any Plotly figure."""
