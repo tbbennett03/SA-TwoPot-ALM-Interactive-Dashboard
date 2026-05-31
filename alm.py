@@ -144,7 +144,7 @@ def style_fig(fig, height=420, title=None, legend_bottom=True):
     if legend_bottom:
         fig.update_layout(
             legend=dict(orientation="h", yanchor="bottom", y=1.02,
-                        xanchor="left", x=0, bgcolor="rgba(0,0,0,0)"
+                        xanchor="left", x=0, bgcolor="rgba(0,0,0,0)",
                         font=dict(color="#E6EDF3", size=12))
         )
     return fig
