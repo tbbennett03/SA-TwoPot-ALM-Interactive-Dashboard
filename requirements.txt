@@ -6,3 +6,4 @@ seaborn
 scipy
 PyPortfolioOpt
 anthropic
+plotly
