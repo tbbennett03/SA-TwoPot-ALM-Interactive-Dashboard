@@ -52,8 +52,8 @@ C_ORANGE = "#FF9A3C"
 C_TEAL   = "#26C6DA"
 
 C_BG     = "#0D1117"   # page background
-C_PANEL  = "#161B22"   # chart panel
-C_GRID   = "#21262D"
+C_PANEL  = "#1E293B"   # chart panel
+C_GRID   = "#334155"
 C_AXIS   = "#8B949E"
 C_TEXT   = "#F8FAFC"
 
