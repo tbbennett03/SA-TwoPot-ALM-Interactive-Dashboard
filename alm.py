@@ -115,7 +115,7 @@ div[data-testid="stMetricDelta"] {
 
 /* Headers */
 h1, h2, h3 {
-    color: #0D1117 !important;
+    color: #1F2937 !important;
     letter-spacing: 0.2px;
 }
 
