@@ -523,7 +523,7 @@ if page == "🏠 Intro & Two-Pot Context":
     For members, this creates a behavioural trade-off: **frequent early withdrawals can significantly reduce long-term 
     retirement outcomes due to the loss of compounding over time**.
 
-    In response, trustees now need an integrated decision-support framework to manage liquidity, optimise portfolios, 
+    In response, trustees now need an **integrated decision-support framework** to manage liquidity, optimise portfolios, 
     and protect member outcomes. *That is what this platform is.*
     """)
 
