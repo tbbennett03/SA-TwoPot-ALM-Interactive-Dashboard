@@ -513,15 +513,18 @@ if page == "🏠 Intro & Two-Pot Context":
     **Once upon a time**, South African pension fund members contributed steadily towards
     retirement, trusting decades of compounding to deliver long-term security.
 
-    **Until one day**, on **1 September 2024**, the **Two-Pot Retirement System** arrived —
-    letting members access part of their savings *before* retirement.
+    On **1 September 2024**, the **Two-Pot Retirement System** was introduced, fundamentally changing 
+    how retirement savings can be accessed by allowing members to withdraw a portion of their savings before retirement. 
 
-    **Because of that**, funds suddenly face **liquidity risk** from large-scale withdrawals.
-    **Because of that**, investment strategy must **balance liquidity against long-term growth**.
-    **Because of that**, members who withdraw repeatedly may **erode their retirement wealth**.
+    This shift introduced a new reality for pension funds: **liquidity risk from potential large-scale withdrawals**, 
+    requiring trustees to rethink how cash flows are managed.
+    At the same time, **investment strategies must now balance competing objectives** — maintaining sufficient 
+    liquidity to meet withdrawals while still preserving long-term growth for retirement adequacy.
+    For members, this creates a behavioural trade-off: **frequent early withdrawals can significantly reduce long-term 
+    retirement outcomes due to the loss of compounding over time**.
 
-    **Until finally**, trustees need an **integrated decision-support framework** to manage
-    liquidity, optimise portfolios, and protect member outcomes. *That is what this platform is.*
+    In response, trustees now need an integrated decision-support framework to manage liquidity, optimise portfolios, 
+    and protect member outcomes. *That is what this platform is.*
     """)
 
     st.divider()
