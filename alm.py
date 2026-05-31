@@ -52,29 +52,75 @@ C_ORANGE = "#FF9A3C"
 C_TEAL   = "#26C6DA"
 
 C_BG     = "#0D1117"   # page background
-C_PANEL  = "#1E293B"   # chart panel
+C_PANEL  = "#1C2128"   # chart panel
 C_GRID   = "#334155"
-C_AXIS   = "#8B949E"
-C_TEXT   = "#F8FAFC"
+C_AXIS   = "#B1BAC4"
+C_TEXT   = "#E6EDF3"
 
 ASSET_COLORS = [C_GREEN, C_BLUE, C_PURPLE, C_ORANGE, C_TEAL, "#FFFFFF"]
 
 # Light CSS polish for an executive-dashboard feel
-st.markdown(
-    """
-    <style>
-      .block-container {padding-top: 2.2rem; padding-bottom: 2rem;}
-      div[data-testid="stMetric"] {
-          background: #161B22; border: 1px solid #30363D;
-          border-radius: 12px; padding: 14px 16px;
-      }
-      div[data-testid="stMetricLabel"] p {color:#8B949E; font-size:0.80rem;}
-      section[data-testid="stSidebar"] {background:#0B0F14;}
-      h1, h2, h3 {letter-spacing:0.2px;}
-    </style>
-    """,
-    unsafe_allow_html=True,
-)
+st.markdown("""
+<style>
+
+/* Main container */
+.block-container {
+    padding-top: 2.2rem;
+    padding-bottom: 2rem;
+}
+
+/* Sidebar */
+section[data-testid="stSidebar"] {
+    background: #0B0F14;
+}
+
+/* Sidebar text */
+section[data-testid="stSidebar"] * {
+    color: #E6EDF3 !important;
+}
+
+/* Radio button labels */
+div[role="radiogroup"] label {
+    color: #E6EDF3 !important;
+    font-size: 1rem !important;
+    font-weight: 500 !important;
+}
+
+/* Metric cards */
+div[data-testid="stMetric"] {
+    background: #161B22;
+    border: 1px solid #30363D;
+    border-radius: 12px;
+    padding: 14px 16px;
+}
+
+/* Metric labels */
+div[data-testid="stMetricLabel"] p {
+    color: #C9D1D9 !important;
+    font-size: 0.9rem !important;
+    font-weight: 500 !important;
+}
+
+/* Metric values */
+div[data-testid="stMetricValue"] {
+    color: #FFFFFF !important;
+    font-size: 2rem !important;
+    font-weight: 700 !important;
+}
+
+/* Metric delta text */
+div[data-testid="stMetricDelta"] {
+    color: #58A6FF !important;
+}
+
+/* Headers */
+h1, h2, h3 {
+    color: #FFFFFF !important;
+    letter-spacing: 0.2px;
+}
+
+</style>
+""", unsafe_allow_html=True)
 
 
 def style_fig(fig, height=420, title=None, legend_bottom=True):
